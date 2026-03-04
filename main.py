@@ -16,7 +16,7 @@ def iniciar_herramienta():
     html_recibido = buscador.realizar_busqueda(dork_seguro, motor=mi_motor)
     if html_recibido:
         urls = limpiador.extraer_url(html_recibido, motor=mi_motor)
-        print("---CONEXION EXITOSA! Codifo HTML recibido.---")
+        print("---CONEXION EXITOSA! Codigo HTML recibido.---")
         print(f"Tamano del HTML:{len(html_recibido)} caracteres.")
         with open(nombre_reporte, "w", encoding="utf-8") as reporte:
             reporte.write(f"---REPORTE DE DORKING: {mi_motor.upper()}{mi_dork}\n")
