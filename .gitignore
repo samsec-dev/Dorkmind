@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 reporte_links.txt
 .env
+/venv
+debug_google.png
+.vscode
